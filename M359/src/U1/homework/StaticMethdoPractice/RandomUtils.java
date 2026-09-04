@@ -7,7 +7,7 @@ public class RandomUtils {
     }
     // C-2
     public static int randInt(int first, int last) {
-        double multiplier = first - last + 1;
+        double multiplier = last - first + 1;
         return (int)(Math.random() * multiplier) + first;
 
     }
