@@ -2,7 +2,7 @@ package U1.homework.firstLab;
 
 public class check {
     public static void main(String[] args) {
-        check("ASEGGS");
+        check("abba");
     }
     public static void check(String word){
         String firstLetter = word.substring(0, 1);
