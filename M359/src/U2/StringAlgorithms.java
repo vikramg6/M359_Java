@@ -58,18 +58,15 @@ public class StringAlgorithms {
         }
         System.out.println(num);
 
-        String newPhrase = "";
+        String newPhrase = phrase;
         // create a new String, or modify the existing String, that removes
         // the word "little" entirely
-        for (int i = 0; i + word.length() <= phrase.length(); i++){
-            String a = phrase.substring(i, i + word.length());
-            if (a.equals(word)) {
-                newPhrase = newPhrase.substring(0, i);
-                newPhrase += newPhrase.substring(i + word.length() + 1);
-                System.out.println(newPhrase);
-            }
+        while (phrase.indexOf(word) != -1) {
+            int indexLittle = phrase.indexOf(word);
+            newPhrase = phrase.substring(0, indexLittle);
+            newPhrase += phrase.substring(indexLittle + word.length());
+            phrase = newPhrase;
         }
-
         System.out.println(newPhrase);
 
 
@@ -78,9 +75,17 @@ public class StringAlgorithms {
 
         // create a new String (based on phrase), or modify the existing String,
         // that replaces the word "little" with the word "BIG"
+        String rePhrase = "Mary had a little lamb, little lamb, little lamb";
+        rePhrase += " Mary had a little lamb, its fleece was white as snow";
+        while (rePhrase.indexOf(word) != -1) {
+            int indexLittle = rePhrase.indexOf(word);
+            newPhrase = rePhrase.substring(0, indexLittle);
+            newPhrase += "BIG";
+            newPhrase += rePhrase.substring(indexLittle + word.length());
+            rePhrase = newPhrase;
 
-
-
+        }
+        System.out.println(newPhrase);
 
     }
 }
