@@ -1,4 +1,4 @@
-package U3.Homework.ClassroomWork.VideoGame;
+package U3.Homework.VideoGame;
 
 public class VideoGameTester {
     public static void main(String[] args) {

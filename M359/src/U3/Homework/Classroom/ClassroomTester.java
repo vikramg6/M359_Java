@@ -1,4 +1,4 @@
-package U3.Homework.ClassroomWork.Classroom;
+package U3.Homework.Classroom;
 
 public class ClassroomTester {
         public static void main(String[] args) {

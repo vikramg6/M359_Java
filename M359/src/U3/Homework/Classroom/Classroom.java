@@ -1,4 +1,4 @@
-package U3.Homework.ClassroomWork.Classroom;
+package U3.Homework.Classroom;
 
 public class Classroom{
     private String room;
