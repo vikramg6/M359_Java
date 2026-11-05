@@ -1,4 +1,4 @@
-package U3.Notes;
+package U3.Notes.Worksheet;
 
 public class CoffeeOrder {
     private String name, size;
