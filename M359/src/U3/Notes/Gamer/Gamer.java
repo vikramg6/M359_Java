@@ -1,4 +1,4 @@
-package U3.Notes.Worksheet;
+package U3.Notes.Gamer;
 
 public class Gamer {
     private String name;
@@ -7,13 +7,8 @@ public class Gamer {
     public Gamer(String name) {
         this.name = name;
         this.score = 0;
-        this.level = 0;
+        this.level = 1;
     }
-    /*
-    Right click, choose generate
-    select constructor
-    Then if you do it again hit get/set
-     */
     public String getName() {
         return name;
     }
@@ -36,5 +31,13 @@ public class Gamer {
 
     public void setLevel(int level) {
         this.level = level;
+    }
+    public void levelUp(){
+        if(score >= 20 + (level * 20)){
+            level += 1;
+        }
+    }
+    public String toString(){
+        return name + " Score: " + score + " Level: " + level;
     }
 }

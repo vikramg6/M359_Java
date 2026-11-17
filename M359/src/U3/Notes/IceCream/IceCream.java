@@ -16,7 +16,6 @@ public class IceCream {
         return(this.flavor.equals(other.flavor) && this.numScoops == other.numScoops && this.inCone == other.inCone);
     }
 
-
     // Sample String returned:
     // Rocky Road cone with 3 scoops
     // Strawberry Bowl with 2 scoops
